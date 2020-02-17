@@ -1,6 +1,70 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
+    <title>AKAN BIRTHDAY CALCULATOR</title>
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href ="styles.css" rel="stylesheet" type="text/css">
   </head>
+  <body>
+    <style>
+     body {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGhe9Cmx6M_jZhoh0ulH5ppxJBGzMJmhGJpBfcfDN-NuPjf_rE')
+</style>
+    <script src="js/scripts.js"></script>
+    <div class="container">
+      <div class="jumbotron">
+       
+      <h1><div><u><strong>AKAN BIRTHDAY CALCULATOR</strong></u></h1>
+        <p>Discover the right day of the week,month and year you were born!</p>
+      </div>
+    </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-title">
+                <h1>INFORMATION ABOUT US</h1>
+            </div>
+          </div>
+        </div>
+    </div>
+          
+             <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <p>Generation after generation,The People of Akan from Ghana have had their own naming system which is in accordance to gender.Most importantly,There are Akan names for ever gender and every day of the week.Due to cultural disconnect,the naming system has somewhat been forgotten by many of the people</p>
+                  <p><strong>NOT TO WORRY.</strong>Here at Akan Birthday Calculator we aid you in getting to know the exact day of the week,month and year you were born</p>
+                  <p><strong> INPUT YOUR BIRTH DETAILS.CLICK THE SUBMIT BUTTON AND HAVE YOUR AKAN NAME REVEALED!</strong></p>
+                </div>
+              </div>   
+             </div>
+                
+      <div class="col-md-6">
+        <div class="form-group top-form">
+          Century
+          <input type="number" class="form-control" placeholder="Enter the century" id="century" required  min="0" max="30">
+        </div>
+        <div class="form-group">
+          Year
+          <input type="number" placeholder="Enter the year last two digits" class="form-control" id="year" required min="00" max="99">
+        </div>
+        <div class="form-group">
+          Month
+          <input type="number" class="form-control" placeholder="Enter the month of the year" id="month" required min="1" max="12">
+        </div>
+        <div class="form-group">
+          Day
+          <input type="number" placeholder="Enter the day of the month" class="form-control" id="day" required min="1" max="31">
+        </div>
+        <form class="radio-button">
+          <input type="radio" value="male" id="male"  required>Male
+          <input type="radio" value="female" id="female" required>Female
+          <br>
+          <div class="form-group">
+             <button type="button" class="btn-block" onclick="checkgender()"><Calculate Birthday</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </body>
 </html>
