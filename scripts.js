@@ -1,19 +1,19 @@
 function checkgender() {
-  var century=document.getElementsByid("century").value;
-  var CC=parseInt(century)
-  var day = document.getElementsByid("day").value;
-  var DD= parseInt(day);
-  var month = document.getElementsByid("month").value;
-  var MM = parseInt(month);
-  var year = document.getElementsByCid("year").value;
-  var YY = parseInt(year);
-  var result =(((CC / 4) - 2 * CC- 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
+  var century = document.getElementById("century").value;
+  var cc = parseInt(century)
+  var day = document.getElementById("day").value;
+  var dd = parseInt(day);
+  var month = document.getElementById("month").value;
+  var mm = parseInt(month);
+  var year = document.getElementById("year").value;
+  var yy = parseInt(year);
+  var result =(((cc / 4) - 2 * cc- 1) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7;
   var boy = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
   var girl = ["Akosua", " Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-  if (document.getElementsByid("male").checked){
-  var gender = 'male';
-  }
- else if (document.getElementById("female")){
+  if (document.getElementById("male").checked){
+    var gender = 'male';
+    }
+ else if (document.getElementById ("female")){
   var gender = 'female';
   }
   if (MM < 1 || MM > 12 || MM == 2 && DD > 29) {
